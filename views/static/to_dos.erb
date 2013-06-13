@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="css/todos.css">
+
+<div class='todos'>
+	
+	<h1>To Dos</h1>
+
+  <div class='list'>
+	<% if !@notes.empty? %>
+  	<% @notes.each do |note| %>
+      <div>
+      	<span><%= note.content %></span>
+        <form class='delete' action='/<%= note.id %>' method="post">
+        	<input type='hidden' name="_method" value="delete" />
+        	<input type='submit' value='Delete' />
+        </form>
+      </div>
+	  <% end %>
+	<% else %>
+	  <div> No Notes! </div>
+	<% end %>
+  </div>
+
+	<form class='newnote' action='/' method="post">
+		<input type="text" name="content" placeholder='Enter Your Note...' />
+		<input type="submit" value='Save' />
+	</form>
+
+</div>

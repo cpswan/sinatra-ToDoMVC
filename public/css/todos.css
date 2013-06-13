@@ -1,0 +1,43 @@
+.todos {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%; height: 68%;
+  margin: 0 auto;
+}
+  .todos h1 {
+    text-align: center;
+  }
+
+.list {
+  margin: auto;
+  height: 60%; width: 90%;  
+}
+
+.list div {
+  margin: 0 auto 2.5%;
+  border-bottom: 1px solid #ccc;
+  font-size: 2em;
+  padding-bottom: 1.5%;
+}
+
+.list span {
+    width: 1%;
+}
+
+.delete {
+  display: inline;
+  float: right;
+  font-size: .58em;
+}
+.delete input {
+  background: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 5%;
+}
+
+.newnote {
+  padding: 3% 0 3% 0;
+  text-align: center;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title><%= @title ? "#{@title} | thePonti" : 'thePonti.' %></title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/lib/html5bp.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lib/modernizr-2.5.3.js"></script>
+</head>
+<body>
+
+  <div class='navbar'>
+    <a class='logo' href='/'> thePonti. </a>
+
+    <div class='nav'>
+      <a href='/todos'>to-dos</a>
+      <a href='/about'>about</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <%= yield %>
+  </div>
+
+  
+  <script src="js/lib/jquery-1.7.1.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
