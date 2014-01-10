@@ -6,7 +6,7 @@ require 'data_mapper'
 # old SQLite line
 # DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/recall.db")
 
-DataMapper.setup(:default, 'mysql://root:pa55Word@localhost/todomvc')
+DataMapper.setup(:default, 'mysql://root:pa55Word@$DB_PORT_3306_TCP_ADDR/todomvc')
 
 class Note
 	include DataMapper::Resource
@@ -20,6 +20,7 @@ end
 
 #DataMapper.finalize.auto_upgrade!
 
+set :bind, '0.0.0.0'
 
 get '/' do
   erb :'static/home'
