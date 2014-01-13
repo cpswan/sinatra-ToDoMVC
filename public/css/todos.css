@@ -10,14 +10,14 @@
 
 .list {
   margin: auto;
-  height: 60%; width: 90%;  
+  height: 80%; width: 90%;  
 }
 
 .list div {
-  margin: 0 auto 2.5%;
+  margin: 0 auto 1.5%;
   border-bottom: 1px solid #ccc;
-  font-size: 2em;
-  padding-bottom: 1.5%;
+  font-size: 1.25em;
+  padding-bottom: 2.5%;
 }
 
 .list span {
