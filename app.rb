@@ -5,8 +5,8 @@ require 'data_mapper'
 
 # old SQLite line
 # DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/recall.db")
-
-DataMapper.setup(:default, 'mysql://root:pa55Word@$DB_PORT_3306_TCP_ADDR/todomvc')
+dburl = 'mysql://root:pa55Word@' + ENV['DB_PORT_3306_TCP_ADDR'] + '/todomvc'
+DataMapper.setup(:default, dburl)
 
 class Note
 	include DataMapper::Resource
