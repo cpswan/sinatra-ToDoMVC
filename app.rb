@@ -18,6 +18,7 @@ end
 
 #DataMapper.finalize.auto_upgrade!
 
+set :bind, '0.0.0.0'
 
 get '/' do
   erb :'static/home'
