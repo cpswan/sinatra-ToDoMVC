@@ -16,7 +16,7 @@ class Note
 	property :updated_at, DateTime
 end
 
-#DataMapper.finalize.auto_upgrade!
+DataMapper.finalize.auto_upgrade!
 
 set :bind, '0.0.0.0'
 
