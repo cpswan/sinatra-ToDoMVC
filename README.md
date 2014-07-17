@@ -1,7 +1,7 @@
 sinatra-ToDoMVC
 ===============
 
-ToDo application using Sinatra, DataMapper, &amp; SQLlite
+ToDo application using Sinatra, DataMapper, &amp; SQLite
 
 apt repos:
 ---------
