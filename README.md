@@ -4,17 +4,34 @@ sinatra-ToDoMVC
 ToDo application using Sinatra, DataMapper, &amp; MySQL
 
 
-apt repos:
+Grab this repo locally:
 ---------
 
-sudo apt-get install -y rubygems libmysqlclient-dev
+Option 1 - git clone - requires git to be installed and git keys to be in the server's .ssh directory.
+  git clone git@github.com:cohesive/sinatra-ToDoMVC.git
 
-(libsqlite3-dev)
+Option 2 - wget zipfile - requires unzip to extract the contents of the zipfile.
+  wget https://github.com/cohesive/sinatra-ToDoMVC/archive/master.zip
 
-gems:
+
+Apt-get:
 ----
 
-sudo gem install sinatra sinatra-contrib data_mapper dm-mysql-adapter --no-rdoc --no-ri
+apt-get install libmysqlclient-dev libsqlite3-dev rubygems
 
-(dm-sqlite-adapter)
 
+Gem:
+----
+
+gem install bundler --no-rdoc --no-ri
+
+
+Bundle:
+----
+
+bundle install --path vendor/bundle --binstubs
+
+Run sinatra:
+----
+
+bin/rackup
