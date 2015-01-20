@@ -7,14 +7,14 @@ html, body { height: 100%; width: 100%; font-family: Helvetica,Arial,sans-serif;
 .navbar {
   height: 60px; width: 100%;
   position: absolute;
-  background: none repeat scroll 0 0 #33b6e8;
+  background: none repeat scroll 0 0 white;
 }
 a.logo {
     float: left;
     padding: 5px;
     margin-left: 10px;
     text-align: center; font-size: 3em; font-weight: 800;
-    text-decoration: none; color: white;
+    text-decoration: none; color: #33b6e8;
 } 
   .nav {
      height: 46%;
