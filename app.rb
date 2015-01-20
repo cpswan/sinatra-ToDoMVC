@@ -4,7 +4,7 @@ require 'sinatra/contrib/all'
 require 'data_mapper'
 
 # old SQLite line
-# DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/recall.db")
+#DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/recall.db")
 
 DataMapper.setup(:default, 'mysql://root:pa55Word@192.168.56.101/todomvc')
 
