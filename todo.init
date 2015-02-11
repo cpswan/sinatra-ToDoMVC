@@ -1,0 +1,39 @@
+### BEGIN INIT INFO
+# Provides:   todo
+# Required-Start: $local_fs $remote_fs
+# Required-Stop:  $local_fs $remote_fs
+# Should-Start:   $network
+# Should-Stop:    $network
+# Default-Start:  2 3 4 5
+# Default-Stop:   0 1 6
+# Short-Description:    todo
+# Description:    This runs a script continuously in screen.
+### END INIT INFO
+$DEMO_USER=cftdemo
+
+case "$1" in
+
+  start)
+        echo "Starting todo"
+        su $DEMO_USER -c "cd /home/$DEMO_USER/sinatra-ToDoMVC-demo && screen -dmS demo ruby app.rb"
+        ;;
+  stop)
+        echo "Stopping todo"
+        PID=`ps -ef | grep app.rb | grep -v grep | awk '{print $2}'`
+        kill -9 $PID
+        ;;
+
+  restart|force-reload)
+        echo "Restarting $screen"
+        PID=`ps -ef | grep app.sh | grep -v grep | awk '{print $2}'`
+        kill -9 $PID
+        sleep 15
+        su $DEMO_USER -c "cd /home/$DEMO_USER/sinatra-ToDoMVC-demo && screen -dmS demo ruby app.rb"
+        ;;
+  *)
+        N=/etc/init.d/$NAME
+        echo "Usage: $N {start|stop|restart}" >&2
+        exit 1
+        ;;
+esac
+exit 0
