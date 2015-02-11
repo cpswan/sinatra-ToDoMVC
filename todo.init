@@ -9,7 +9,7 @@
 # Short-Description:    todo
 # Description:    This runs a script continuously in screen.
 ### END INIT INFO
-$DEMO_USER=cftdemo
+$DEMO_USER=ubuntu
 
 case "$1" in
 
