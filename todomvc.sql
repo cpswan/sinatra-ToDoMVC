@@ -1,3 +1,7 @@
+USE mysql;
+GRANT ALL ON *.* to root@'192.168.56.111' IDENTIFIED BY 'pa55Word'; 
+FLUSH PRIVILEGES;
+
 CREATE DATABASE `todomvc`;
 
 USE `todomvc`;
