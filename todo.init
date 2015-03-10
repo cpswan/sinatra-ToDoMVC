@@ -15,6 +15,7 @@ case "$1" in
 
   start)
         echo "Starting todo"
+        while test "$(ifconfig -s | grep tun0)" = ''; do echo "Waiting for tun0"; sleep 5; done
         su $DEMO_USER -c "cd /home/$DEMO_USER/sinatra-ToDoMVC-demo && screen -dmS demo ruby app.rb"
         ;;
   stop)
@@ -28,6 +29,7 @@ case "$1" in
         PID=`ps -ef | grep app.sh | grep -v grep | awk '{print $2}'`
         kill -9 $PID
         sleep 15
+        while test "$(ifconfig -s | grep tun0)" = ''; do echo "Waiting for tun0"; sleep 5; done
         su $DEMO_USER -c "cd /home/$DEMO_USER/sinatra-ToDoMVC-demo && screen -dmS demo ruby app.rb"
         ;;
   *)
