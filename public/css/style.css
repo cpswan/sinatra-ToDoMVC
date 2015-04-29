@@ -1,32 +1,35 @@
-html, body { height: 100%; width: 100%; font-family: Garamond;}
+html, body { height: 100%; width: 100%; font-family: Helvetica,Arial,sans-serif;}
 
+.home_splash, .about {
+  padding-left:10px;
+}
 
 .navbar {
-  height: 10%; width: 100%;
+  height: 60px; width: 100%;
   position: absolute;
-  background: rgba(0,0,0,0.88);
+  background: none repeat scroll 0 0 white;
 }
-  a.logo {
+a.logo {
     float: left;
-    padding: 0.84%;
-    margin-left: 1%;
+    padding: 5px;
+    margin-left: 10px;
     text-align: center; font-size: 3em; font-weight: 800;
     text-decoration: none; color: white;
-  } .logo:hover { background: white; color: black; }
+} 
   .nav {
      height: 46%;
   }
     .nav a {
       display: inline-block;
-      padding: 1.55%;
+      padding: 15px;
       text-decoration: none;
-      color: white;
+      color: #33b6e8;
       font-size: 2.2em;
-      margin-left: 2%;
+      margin-left: 20px;
     }
 .content {
   float: right;
   width: 100%; height: 92.5%;
-  margin-top: 10%;
+  margin-top: 80px;
   font-size: 1.5em;
 }

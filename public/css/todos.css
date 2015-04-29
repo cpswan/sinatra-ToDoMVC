@@ -1,7 +1,7 @@
 .todos {
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 50%; height: 68%;
+  width: 50%;
   margin: 0 auto;
 }
   .todos h1 {
@@ -30,7 +30,7 @@
   font-size: .58em;
 }
 .delete input {
-  background: red;
+  background: #33b6e8;
   color: white;
   border-radius: 10px;
   border: none;
