@@ -24,13 +24,12 @@ Use the BrightBox Ruby Repo to get 1.8.7
 gems:
 ----
 
-    sudo gem install addressable --version 2.3.5 \
-    rack --version 1.5.2 \
-    sinatra --version 1.4.4 \
-    sinatra-contrib --version 1.4.1 \
-    data_mapper --version 1.2.0 \
-    dm-mysql-adapter --version 1.2.0 \
-    --no-rdoc --no-ri
+    sudo gem install --version 2.3.5 --no-rdoc --no-ri addressable 
+    sudo gem install --version 1.5.2 --no-rdoc --no-ri rack 
+    sudo gem install --version 1.4.4 --no-rdoc --no-ri sinatra 
+    sudo gem install --version 1.4.1 --no-rdoc --no-ri sinatra-contrib 
+    sudo gem install --version 1.2.0 --no-rdoc --no-ri data_mapper 
+    sudo gem install --version 1.2.0 --no-rdoc --no-ri dm-mysql-adapter 
 
 Originally `dm-sqlite-adapter` was used, but it's been replaced by MySQL
 
