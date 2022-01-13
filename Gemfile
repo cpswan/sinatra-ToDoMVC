@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'sinatra-contrib'
+gem 'sinatra', '>= 2.0.2'
+gem 'sinatra-contrib', '>= 2.0.2'
 
-gem 'thin'
+gem 'thin', '>= 1.5.1'
 
-gem 'datamapper'
+gem 'datamapper', '>= 1.2.0'
 gem 'dm-sqlite-adapter'
 
 gem 'dm-mysql-adapter'
