@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     addressable (2.2.8)
     backports (3.3.0)
@@ -27,6 +28,9 @@ GEM
       dm-core (~> 1.2.0)
     dm-migrations (1.2.0)
       dm-core (~> 1.2.0)
+    dm-mysql-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_mysql (~> 0.10.6)
     dm-serializer (1.2.1)
       dm-core (~> 1.2.0)
       fastercsv (~> 1.5.4)
@@ -50,6 +54,8 @@ GEM
       uuidtools (~> 2.1)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
+    do_mysql (0.10.13)
+      data_objects (= 0.10.13)
     do_sqlite3 (0.10.13)
       data_objects (= 0.10.13)
     eventmachine (1.0.3)
@@ -57,7 +63,7 @@ GEM
     json (1.6.7)
     json_pure (1.6.7)
     multi_json (1.0.4)
-    rack (1.5.2)
+    rack (1.6.13)
     rack-protection (1.5.0)
       rack
     rack-test (0.6.2)
@@ -86,6 +92,7 @@ PLATFORMS
 
 DEPENDENCIES
   datamapper
+  dm-mysql-adapter
   dm-sqlite-adapter
   sinatra
   sinatra-contrib
